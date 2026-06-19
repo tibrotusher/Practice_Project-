@@ -13,3 +13,22 @@
   top: 0;
   z-index: 999;
 }
+.col-3 .card .card-img {
+  text-align: center;
+}
+#works .col-4:hover {
+  display: block;
+  color: black;
+  transform: translate(10px, 10px);
+  /* animation: rotate3d 8s infinite linear; */
+}
+#service .card-body:hover {
+  display: block;
+  color: white;
+  transform: translate(10px, 10px);
+}
+#Specailtie .bg-black .col-3 .card:hover {
+  display: block;
+  color: black;
+  transform: translate(10px, 10px);
+}
