@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#breadcrumb_section {
+  background-image: url(../img/paulos-ai-generated-8594904_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#breadcrumb_section:active {
+  color: black;
+}
+
+#footer_section {
+  background-color: #009432;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+}

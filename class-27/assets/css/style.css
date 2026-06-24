@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar_section div .navbar .container div .active {
+  color: #2d3436;
+  border-bottom: 2px solid #2d3436;
+}

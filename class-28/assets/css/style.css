@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-#banner_section {
-  background-image: url(../IMG/mrbinz-women-9152739_1280.jpg);
-  height: 80vh;
+
+#breadcrumb_section {
+  background-image: url(../img/sdg_rai-vietnam-8420602_640.jpg);
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
