@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header_section {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+#header_section .active {
+  color: black !important;
+}
+
+#intro_section img {
+  transition: 0.3s;
+}
+
+#intro_section img:hover {
+  transform: scale(1.1);
+}
+
+#farming_section .card {
+  transition: 0.3s;
+}
+
+#farming_section .card:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+}
+
+#crop_section img {
+  transition: 0.3s;
+}
+
+#crop_section img:hover {
+  transform: scale(1.1);
+}
+
+#pest_control img {
+  transition: 0.3s;
+}
+
+#pest_control img:hover {
+  transform: scale(1.07);
+}
+
+#tips_section .card {
+  transition: 0.3s;
+}
+
+#tips_section .card:hover {
+  transform: scale(1.06);
+  box-shadow: 4px 4px 4px 4px rgb(70, 68, 68);
+}
+
+#banner_section,
+#carouselExampleCaptions {
+  overflow: hidden;
+  height: 80vh;
+}
+
+#banner_section #carouselExampleCaptions .carousel-item img {
+  width: 100%;
+  height: 80vh;
+}
+
+#breadcrumb_section {
+  background-image: url(../img/rauschenberger-sunset-3812820_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#footer_section {
+  background-color: #009432;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+}
