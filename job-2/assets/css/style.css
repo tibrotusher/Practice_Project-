@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#navbar_section .active {
+  color: black !important;
+}
+
+#navbar_section a:hover {
+  transform: scale(1.15);
+  color: yellowgreen !important;
+}
+
+#banner_section {
+  background: rgba(220, 221, 225, 1)
+    url(../img/chunghyeon-lotus-7737951_1280.jpg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: rgba(245, 246, 250, 1);
+}
+.text-break {
+  white-space: pre-line;
+}
+
+#quiz-section .quiz-content {
+  background-color: #192a56 !important;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.zoom-img {
+  transition: 0.3s ease-in-out;
+}
+
+.zoom-img:hover {
+  transform: scale(1.15);
+}
+
+#breadcrumb_section {
+  background-image: url(../img/bloom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

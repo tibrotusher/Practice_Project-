@@ -9,6 +9,17 @@
   position: sticky;
   top: 0;
   z-index: 99;
+  animation-name: learning;
+  animation-duration: 4s;
+}
+
+@keyframes learning {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blueviolet;
+  }
 }
 
 #header_section .active {
@@ -86,4 +97,17 @@
   text-align: center;
   color: #ffffff;
   font-size: 18px;
+}
+
+@media all and (min-width: 300px) and (max-width: 430px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media all and (orientation: landscape) and (max-width: 430px) {
+  body {
+    background: #009432;
+    width: 300px;
+  }
 }
