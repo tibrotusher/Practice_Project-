@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School</title>
+
+  <!-- favicon link here -->
+  <link rel="shortcut icon" href="./assets/img/download.png" type="image/x-icon">
+
+  <!-- bootstrap icon link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- bootstrap link here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- google fonts link here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- custom css link here -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Custom Header Top Bar -->
+  <div class="bg-dark text-light py-2 fs-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Info -->
+      <div class="d-flex gap-3 align-items-center">
+        <span><i class="bi bi-envelope me-1 text-primary"></i> info@yourdomain.com</span>
+        <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +1 234 567 8900</span>
+      </div>
+      <!-- Social & Auth -->
+      <div class="d-flex gap-3 align-items-center">
+        <div class="vr mx-1 d-none d-sm-block"></div>
+        <a href="#" class="text-light text-decoration-none fw-bold">Login / Register</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-body shadow-sm py-3 sticky-lg-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand fw-bold text-primary fs-4" href="#">
+        <img src="./assets/img/download.png" alt="school logo" class="w-50">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-lg-3">
+          <li class="nav-item"><a class="nav-link fs-4" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary fs-4" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="teacher.html">Teacher</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="student.html">Student</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="result.html">Result</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="academic.html">Academic</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="login.html">Login Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- breadcrumbs section here -->
+  <section id="breadcrumb_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="breadcrubs-caption text-center">
+          <h1 class="text-uppercase text-light fs-3 fw-bold">About Page</h1>
+          <div class="breadcrumbs-caption-btn pt-3">
+            <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+                class="bi bi-house-door-fill"></i>home</a>
+            <span class=" mx-2 text-success">/</span>
+            <a href="" class="text-uppercase text-decoration-none fw-bold text-success">About </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School History Section -->
+  <section class="py-5">
+    <div class="container py-4 py-md-5">
+      <div class="row g-5 align-items-center">
+
+        <!-- Text Content -->
+        <div class="col-lg-6">
+          <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-2">Our Heritage</h6>
+          <h2 class="display-5 fw-bold mb-4">A Legacy of Excellence Since 1925</h2>
+          <p class="lead text-muted mb-4">For nearly a century, our institution has been at the forefront of educational
+            innovation, nurturing minds and shaping the leaders of tomorrow.</p>
+          <p class="text-muted mb-4 lh-lg">What started as a small local academy has grown into a globally recognized
+            university. Our commitment to academic rigor, diverse perspectives, and community engagement remains
+            stronger
+            than ever.</p>
+
+          <!-- Stats Grid -->
+          <div class="row g-4 mt-2 border-top pt-4">
+            <div class="col-6">
+              <h3 class="fw-bold text-primary display-6 mb-1">98<span class="fs-4 text-dark">+</span></h3>
+              <p class="text-muted fw-medium text-uppercase small tracking-wide mb-0">Years of History</p>
+            </div>
+            <div class="col-6">
+              <h3 class="fw-bold text-primary display-6 mb-1">150<span class="fs-4 text-dark">k+</span></h3>
+              <p class="text-muted fw-medium text-uppercase small tracking-wide mb-0">Global Alumni</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Showcase -->
+        <div class="col-lg-6">
+          <div class="position-relative p-3 p-md-4 mt-4 mt-lg-0">
+            <!-- Background Shape -->
+            <div class="position-absolute top-0 end-0 bg-primary opacity-10 rounded-circle"
+              style="width: 80%; height: 80%; z-index: 0;"></div>
+
+            <!-- Main Image -->
+            <img src="./assets/img/photo-1498243691581-b145c3f54a5a.avif" alt="Historic Building"
+              class="img-fluid rounded-4 shadow-lg position-relative z-1" style="border: 10px solid white;">
+
+            <!-- Floating Badge (Hidden on very small screens) -->
+            <div class="position-absolute bottom-0 start-0 translate-middle-y z-2 ms-n4 d-none d-md-block">
+              <div
+                class="bg-white p-4 rounded-4 shadow-lg text-center border-bottom border-primary border-4 hover-lift">
+                <h5 class="fw-bold mb-0 text-uppercase tracking-wide small text-muted">Established</h5>
+                <p class="text-primary fs-2 fw-bold mb-0">1925</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal Message Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+
+      <div class="row g-0 rounded-4 shadow-sm overflow-hidden bg-white">
+        <!-- Portrait -->
+        <div class="col-lg-5 position-relative">
+          <img src="./assets/img/alexandra_koch-ai-generated-7976796_1280.jpg" alt="Dr. Robert Sterling"
+            class="img-fluid w-100 h-100 object-fit-cover" style="min-height: 450px;">
+
+          <!-- Gradient Overlay with Name -->
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 text-white"
+            style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+            <h4 class="fw-bold mb-1">Dr. Robert Sterling</h4>
+            <p class="mb-0 opacity-75 small text-uppercase tracking-wide">Principal & Chief Administrator</p>
+          </div>
+        </div>
+
+        <!-- Message Content -->
+        <div class="col-lg-7 p-4 p-md-5 p-xl-6 d-flex flex-column justify-content-center position-relative">
+          <!-- Large Decorative Quote Icon -->
+          <i class="bi bi-quote position-absolute top-0 end-0 m-4 text-primary opacity-10"
+            style="font-size: 8rem; line-height: 1; z-index: 0;"></i>
+
+          <div class="position-relative z-1">
+            <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-3">Message from Leadership</h6>
+            <h3 class="fw-bold mb-4">Empowering the Next Generation of Thinkers and Leaders</h3>
+
+            <!-- Blockquote -->
+            <div class="fst-italic text-muted mb-4 lead"
+              style="border-left: 4px solid var(--bs-primary); padding-left: 1.5rem;">
+              "Education is not just about the accumulation of facts; it is the awakening of curiosity, the nurturing of
+              character, and the development of a lifelong passion for discovery. We strive to create an environment
+              where
+              every student can find their unique voice."
+            </div>
+
+            <p class="text-muted mb-5 lh-lg">At our institution, we believe in a holistic approach to learning. Our
+              dedicated faculty works tirelessly to ensure that our curriculum not only meets rigorous academic
+              standards
+              but also instills critical thinking, empathy, and resilience. We invite you to join our vibrant community
+              and embark on a transformative educational journey.</p>
+
+            <!-- Signature Image -->
+            <div class="mt-auto">
+              <img src="./assets/img/unitaa-signature-7083534_640.png" alt="Signature" class="opacity-50"
+                style="max-height: 60px; filter: grayscale(100%);">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- mission vision section -->
+  <section class="py-5 my-md-4">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-8 text-center">
+          <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill uppercase fw-bold mb-2">Our Core
+            Identity</span>
+          <h2 class="fw-bold text-dark display-5 mb-3">Purpose & Direction</h2>
+          <div class="mx-auto bg-primary rounded" style="width: 60px; height: 4px;"></div>
+        </div>
+      </div>
+
+      <!-- Mission & Vision Dual Layout Grid -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- 1. MISSION CARD -->
+        <div class="col-12 col-lg-5">
+          <div
+            class="card h-100 border-0 shadow-sm p-4 p-md-5 rounded-4 transition-card position-relative overflow-hidden">
+            <!-- Subtle Decorative Top Border Line -->
+            <div class="position-absolute top-0 start-0 end-0 bg-primary" style="height: 5px;"></div>
+
+            <div class="card-body p-0">
+              <!-- Icon Circle -->
+              <div
+                class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4"
+                style="width: 64px; height: 64px;">
+                <i class="bi bi-rocket-takeoff-fill fs-3"></i>
+              </div>
+
+              <!-- Content -->
+              <h3 class="fw-bold text-dark mb-3">Our Mission</h3>
+              <p class="text-secondary leading-relaxed mb-0">
+                To empower student success through a rigorous, inclusive academic ecosystem. We foster critical
+                thinking,
+                technical innovation, and collaborative leadership, ensuring every learner develops the essential
+                real-world skills to navigate and lead in an evolving global society.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. VISION CARD -->
+        <div class="col-12 col-lg-5">
+          <div
+            class="card h-100 border-0 shadow-sm p-4 p-md-5 rounded-4 transition-card position-relative overflow-hidden">
+            <!-- Subtle Decorative Top Border Line -->
+            <div class="position-absolute top-0 start-0 end-0 bg-success" style="height: 5px;"></div>
+
+            <div class="card-body p-0">
+              <!-- Icon Circle -->
+              <div
+                class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center mb-4"
+                style="width: 64px; height: 64px;">
+                <i class="bi bi-eye-fill fs-3"></i>
+              </div>
+
+              <!-- Content -->
+              <h3 class="fw-bold text-dark mb-3">Our Vision</h3>
+              <p class="text-secondary leading-relaxed mb-0">
+                To become a benchmark institution recognized globally for academic excellence and holistic character
+                development. We envision a future where our diverse graduates emerge as compassionate, technologically
+                literate changemakers who build sustainable and equitable communities worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Administrative Staff Section -->
+  <section class="py-5 bg-white">
+    <div class="container py-4">
+
+      <!-- Header -->
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-2">Administration</h6>
+        <h2 class="display-6 fw-bold mb-0">Meet Our Staff</h2>
+      </div>
+
+      <!-- Staff Grid -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Staff Member 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border border-light shadow-sm rounded-4 h-100 hover-lift bg-light bg-opacity-50">
+            <div class="card-body p-4 d-flex align-items-center gap-4">
+              <img src="./assets/img/dopasia-ai-generated-8719217_640.jpg" alt="Amanda Clarke"
+                class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                style="width: 90px; height: 90px;">
+              <div>
+                <h5 class="fw-bold mb-1">Amanda Clarke</h5>
+                <p class="text-primary small fw-bold mb-2">Head of Admissions</p>
+                <div class="d-flex gap-3 mt-2">
+                  <a href="mailto:amanda@example.com" class="text-muted hover-primary" aria-label="Email"><i
+                      class="bi bi-envelope fs-5"></i></a>
+                  <a href="tel:+1234567890" class="text-muted hover-primary" aria-label="Phone"><i
+                      class="bi bi-telephone fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Staff Member 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border border-light shadow-sm rounded-4 h-100 hover-lift bg-light bg-opacity-50">
+            <div class="card-body p-4 d-flex align-items-center gap-4">
+              <img src="./assets/img/tylijura-ai-generated-9043367_640.png" alt="Thomas Weber"
+                class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                style="width: 90px; height: 90px;">
+              <div>
+                <h5 class="fw-bold mb-1">Thomas Weber</h5>
+                <p class="text-primary small fw-bold mb-2">Financial Aid Director</p>
+                <div class="d-flex gap-3 mt-2">
+                  <a href="mailto:thomas@example.com" class="text-muted hover-primary" aria-label="Email"><i
+                      class="bi bi-envelope fs-5"></i></a>
+                  <a href="tel:+1234567890" class="text-muted hover-primary" aria-label="Phone"><i
+                      class="bi bi-telephone fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Staff Member 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border border-light shadow-sm rounded-4 h-100 hover-lift bg-light bg-opacity-50">
+            <div class="card-body p-4 d-flex align-items-center gap-4">
+              <img src="./assets/img/tylijura-ai-generated-9043369_640.png" alt="Rachel Green"
+                class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                style="width: 90px; height: 90px;">
+              <div>
+                <h5 class="fw-bold mb-1">Rachel Green</h5>
+                <p class="text-primary small fw-bold mb-2">Student Counselor</p>
+                <div class="d-flex gap-3 mt-2">
+                  <a href="mailto:rachel@example.com" class="text-muted hover-primary" aria-label="Email"><i
+                      class="bi bi-envelope fs-5"></i></a>
+                  <a href="tel:+1234567890" class="text-muted hover-primary" aria-label="Phone"><i
+                      class="bi bi-telephone fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Staff Member 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border border-light shadow-sm rounded-4 h-100 hover-lift bg-light bg-opacity-50">
+            <div class="card-body p-4 d-flex align-items-center gap-4">
+              <img src="./assets/img/tylijura-ai-generated-9419886_640.jpg" alt="Kevin Martinez"
+                class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                style="width: 90px; height: 90px;">
+              <div>
+                <h5 class="fw-bold mb-1">Kevin Martinez</h5>
+                <p class="text-primary small fw-bold mb-2">Registrar</p>
+                <div class="d-flex gap-3 mt-2">
+                  <a href="mailto:kevin@example.com" class="text-muted hover-primary" aria-label="Email"><i
+                      class="bi bi-envelope fs-5"></i></a>
+                  <a href="tel:+1234567890" class="text-muted hover-primary" aria-label="Phone"><i
+                      class="bi bi-telephone fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Custom Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Column 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-white mb-3"><img src="./assets/img/download.png" alt="" class="w-25"></h5>
+          <p class="text-secondary small mb-4">We provide high-quality digital solutions to help businesses grow and
+            scale
+            effectively. Innovate with us and reach new heights.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Home</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">About</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Teacher</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Student</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Result</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Academic</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Login Page</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+            <li class="d-flex gap-3 align-items-start">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>123 Innovation Ave, Tech City,<br>New York 10001</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>support@brandlogo.com</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+          <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address"
+              required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
+        </div>
+
+      </div>
+
+      <!-- Simple Footer Copyright -->
+      <hr class="border-secondary mt-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; 2026 BrandLogo. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section here -->
+  <footer id="footer_section" class="py-3 bg-dark">
+    <div class="container-fluid">
+      <div class="soket">
+        <p class="mb-0">Copyright © 2026 All rights reserved.</p>
+        <small>
+          <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a>
+          |
+          <a href="#" class="text-white text-decoration-none mx-2"> Terms of Service</a>
+        </small>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- bootstrap js link here -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

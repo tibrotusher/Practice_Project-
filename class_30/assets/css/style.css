@@ -1,10 +1,31 @@
 *,
-::after,
-::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-h1 {
-  color: blueviolet;
+
+#banner_section img {
+  height: 80vh;
+  width: 100;
+}
+
+#breadcrumb_section {
+  background-image: url(../img/chunghyeon-lotus-7737951_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+#footer_section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
 }

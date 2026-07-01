@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School</title>
+
+  <!-- favicon link here -->
+  <link rel="shortcut icon" href="./assets/img/download.png" type="image/x-icon">
+
+  <!-- bootstrap icon link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- bootstrap link here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- google fonts link here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- custom css link here -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Custom Header Top Bar -->
+  <div class="bg-dark text-light py-2 fs-7">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Contact Info -->
+      <div class="d-flex gap-3 align-items-center">
+        <span><i class="bi bi-envelope me-1 text-primary"></i> info@yourdomain.com</span>
+        <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +1 234 567 8900</span>
+      </div>
+      <!-- Social & Auth -->
+      <div class="d-flex gap-3 align-items-center">
+        <div class="vr mx-1 d-none d-sm-block"></div>
+        <a href="#" class="text-light text-decoration-none fw-bold">Login / Register</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-body shadow-sm py-3 sticky-md-top">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a class="navbar-brand fw-bold text-primary fs-4" href="#">
+        <img src="./assets/img/download.png" alt="school logo" class="w-50">
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-lg-3">
+          <li class="nav-item"><a class="nav-link fs-4" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="teacher.html">Teacher</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary fs-4" href="student.html">Student</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="result.html">Result</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="academic.html">Academic</a></li>
+          <li class="nav-item"><a class="nav-link fs-4" href="login.html">Login Page</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- breadcrumbs section here -->
+  <section id="breadcrumb_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="breadcrubs-caption text-center">
+          <h1 class="text-uppercase text-light fs-3 fw-bold">Student Page</h1>
+          <div class="breadcrumbs-caption-btn pt-3">
+            <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+                class="bi bi-house-door-fill"></i>home</a>
+            <span class=" mx-2 text-success">/</span>
+            <a href="" class="text-uppercase text-decoration-none fw-bold text-success">Student</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- best result section -->
+  <section id="best_result" class="py-5">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-8">
+          <h2 class="fw-bold text-dark mb-1">
+            <i class="bi bi-trophy-fill text-warning me-2"></i>Academic Merit List
+          </h2>
+          <p class="text-muted mb-md-0">Top-performing students ranked by GPA across all academic departments.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <!-- Overall Topper Quick Showcase Box -->
+          <div class="p-3 bg-warning bg-opacity-10 border border-warning rounded d-inline-block text-start shadow-sm">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-star-fill text-warning fs-4"></i>
+              <div>
+                <small class="text-uppercase fw-bold text-muted d-block" style="font-size: 0.75rem;">School
+                  Topper</small>
+                <strong class="text-dark">Sarah Jenkins (GPA 4.0)</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student List Card Structure -->
+      <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+        <div
+          class="card-header bg-white py-3 border-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <h5 class="fw-bold text-secondary mb-0">Highest Achieving Cohort</h5>
+          <!-- Filter Pills Layout -->
+          <div class="d-flex gap-2">
+            <button class="btn btn-sm btn-primary px-3 rounded-pill">All Depts</button>
+            <button class="btn btn-sm btn-outline-secondary px-3 rounded-pill">Science</button>
+            <button class="btn btn-sm btn-outline-secondary px-3 rounded-pill">Commerce</button>
+            <button class="btn btn-sm btn-outline-secondary px-3 rounded-pill">Arts</button>
+          </div>
+        </div>
+
+        <!-- Responsive Data Table Container -->
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light text-uppercase fs-7 text-muted">
+              <tr>
+                <th scope="col" class="ps-4" style="width: 80px;">Rank</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">Class & Section</th>
+                <th scope="col" class="text-center">GPA / Marks</th>
+                <th scope="col" class="text-end pe-4">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rank 1 Row -->
+              <tr class="table-warning bg-opacity-10">
+                <td class="ps-4">
+                  <span
+                    class="badge bg-warning text-dark fs-6 rounded-circle d-inline-flex align-items-center justify-content-center"
+                    style="width: 32px; height: 32px;">1</span>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-person-circle text-secondary fs-3"></i>
+                    <div>
+                      <h6 class="fw-bold mb-0">Sarah Jenkins</h6>
+                      <small class="text-muted">ID: #2026091</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span
+                    class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">Science</span>
+                </td>
+                <td>Grade 12 - Sec A</td>
+                <td class="text-center fw-bold text-success fs-5">4.00</td>
+                <td class="text-end pe-4">
+                  <span class="badge bg-success rounded-pill px-3 py-2">Distinction</span>
+                </td>
+              </tr>
+
+              <!-- Rank 2 Row -->
+              <tr>
+                <td class="ps-4">
+                  <span
+                    class="badge bg-secondary text-white fs-6 rounded-circle d-inline-flex align-items-center justify-content-center"
+                    style="width: 32px; height: 32px;">2</span>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-person-circle text-secondary fs-3"></i>
+                    <div>
+                      <h6 class="fw-bold mb-0">David Miller</h6>
+                      <small class="text-muted">ID: #2026104</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span
+                    class="badge bg-success-subtle text-success border border-success-subtle px-2 py-1">Commerce</span>
+                </td>
+                <td>Grade 11 - Sec B</td>
+                <td class="text-center fw-bold text-success fs-5">3.95</td>
+                <td class="text-end pe-4">
+                  <span class="badge bg-success rounded-pill px-3 py-2">Distinction</span>
+                </td>
+              </tr>
+
+              <!-- Rank 3 Row -->
+              <tr>
+                <td class="ps-4">
+                  <span
+                    class="badge bg-danger bg-opacity-75 text-white fs-6 rounded-circle d-inline-flex align-items-center justify-content-center"
+                    style="width: 32px; height: 32px;">3</span>
+                </td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-person-circle text-secondary fs-3"></i>
+                    <div>
+                      <h6 class="fw-bold mb-0">Emily Watson</h6>
+                      <small class="text-muted">ID: #2026312</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span
+                    class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-2 py-1">Arts</span>
+                </td>
+                <td>Grade 12 - Sec A</td>
+                <td class="text-center fw-bold text-success fs-5">3.92</td>
+                <td class="text-end pe-4">
+                  <span class="badge bg-success rounded-pill px-3 py-2">Distinction</span>
+                </td>
+              </tr>
+
+              <!-- Rank 4 Row -->
+              <tr>
+                <td class="ps-4 fw-bold text-muted ps-4">#4</td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <i class="bi bi-person-circle text-secondary fs-3"></i>
+                    <div>
+                      <h6 class="fw-semibold mb-0">James Rahat</h6>
+                      <small class="text-muted">ID: #2026045</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span
+                    class="badge bg-primary-subtle text-primary border border-primary-subtle px-2 py-1">Science</span>
+                </td>
+                <td>Grade 11 - Sec A</td>
+                <td class="text-center fw-bold text-dark fs-6">3.88</td>
+                <td class="text-end pe-4">
+                  <span class="badge bg-light text-dark border rounded-pill px-3 py-2">First Class</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Card Footer Pagination -->
+        <div class="card-footer bg-white py-3 border-top d-flex justify-content-between align-items-center">
+          <small class="text-muted">Showing 1-4 of 25 top students</small>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm mb-0">
+              <li class="page-item disabled"><a class="page-item page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- student list section here -->
+  <section id="student_list" class="py-5">
+    <div class="container">
+
+      <!-- Section Control Dashboard -->
+      <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body p-4">
+          <div class="row g-3 align-items-center">
+            <!-- Title Block -->
+            <div class="col-12 col-md-4">
+              <h4 class="fw-bold text-dark mb-1">Student Directory</h4>
+              <p class="text-muted small mb-0">Manage student records and individual enrollment states</p>
+            </div>
+            <!-- Search & Filters -->
+            <div class="col-12 col-sm-8 col-md-5">
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0 text-muted">
+                  <i class="bi bi-search"></i>
+                </span>
+                <input type="text" class="form-control border-start-0 ps-0"
+                  placeholder="Search by name, roll number, or email...">
+              </div>
+            </div>
+            <!-- Action Button -->
+            <div class="col-12 col-sm-4 col-md-3 text-sm-end">
+              <button class="btn btn-primary w-100 w-sm-auto px-4">
+                <i class="bi bi-person-plus-fill me-2"></i>Add Student
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Roster Table Layout -->
+      <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light border-bottom text-muted">
+              <tr>
+                <th scope="col" class="ps-4" style="width: 100px;">Roll No.</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Department & Class</th>
+                <th scope="col">Parent Contact</th>
+                <th scope="col">Status</th>
+                <th scope="col" class="text-end pe-4">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <!-- Student Record Row 1 -->
+              <tr>
+                <td class="ps-4 fw-semibold text-secondary">#1021</td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                      style="width: 40px; height: 40px;">
+                      AM
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">Tibro Tusher</h6>
+                      <small class="text-muted">tibro.m@school.edu</small>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="fw-semibold text-dark">Science</div>
+                  <small class="text-muted">Grade 11 - Sec A</small>
+                </td>
+                <td>
+                  <div class="small"><i class="bi bi-telephone text-muted me-2"></i>+1 555-0192</div>
+                  <div class="small text-muted"><i class="bi bi-envelope text-muted me-2"></i>p.morgan@mail.com</div>
+                </td>
+                <td>
+                  <span
+                    class="badge bg-success-subtle text-success px-2 py-1 border border-success-subtle rounded-pill">Active</span>
+                </td>
+                <td class="text-end pe-4">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-sm btn-light border" title="View Profile"><i
+                        class="bi bi-eye text-primary"></i></button>
+                    <button class="btn btn-sm btn-light border" title="Edit Student"><i
+                        class="bi bi-pencil text-secondary"></i></button>
+                    <button class="btn btn-sm btn-light border" title="Delete"><i
+                        class="bi bi-trash text-danger"></i></button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Student Record Row 2 -->
+              <tr>
+                <td class="ps-4 fw-semibold text-secondary">#1022</td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                      style="width: 40px; height: 40px;">
+                      BR
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">Nirjona Roy</h6>
+                      <small class="text-muted">n.roy@school.edu</small>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="fw-semibold text-dark">Commerce</div>
+                  <small class="text-muted">Grade 11 - Sec B</small>
+                </td>
+                <td>
+                  <div class="small"><i class="bi bi-telephone text-muted me-2"></i>+1 555-0143</div>
+                  <div class="small text-muted"><i class="bi bi-envelope text-muted me-2"></i>m.roy@mail.com</div>
+                </td>
+                <td>
+                  <span
+                    class="badge bg-success-subtle text-success px-2 py-1 border border-success-subtle rounded-pill">Active</span>
+                </td>
+                <td class="text-end pe-4">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-sm btn-light border" title="View Profile"><i
+                        class="bi bi-eye text-primary"></i></button>
+                    <button class="btn btn-sm btn-light border" title="Edit Student"><i
+                        class="bi bi-pencil text-secondary"></i></button>
+                    <button class="btn btn-sm btn-light border" title="Delete"><i
+                        class="bi bi-trash text-danger"></i></button>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Student Record Row 3 -->
+              <tr>
+                <td class="ps-4 fw-semibold text-secondary">#1023</td>
+                <td>
+                  <div class="d-flex align-items-center gap-3">
+                    <div
+                      class="bg-warning bg-opacity-10 text-warning-emphasis rounded-circle d-flex align-items-center justify-content-center fw-bold"
+                      style="width: 40px; height: 40px;">
+                      CH
+                    </div>
+                    <div>
+                      <h6 class="fw-bold mb-0">Tirtha Roy</h6>
+                      <small class="text-muted">tirtho.h@school.edu</small>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="fw-semibold text-dark">Arts</div>
+                  <small class="text-muted">Grade 12 - Sec A</small>
+                </td>
+                <td>
+                  <div class="small"><i class="bi bi-telephone text-muted me-2"></i>+1 555-0188</div>
+                  <div class="small text-muted"><i class="bi bi-envelope text-muted me-2"></i>j.huang@mail.com</div>
+                </td>
+                <td>
+                  <span
+                    class="badge bg-warning-subtle text-warning-emphasis px-2 py-1 border border-warning-subtle rounded-pill">On
+                    Leave</span>
+                </td>
+                <td class="text-end pe-4">
+                  <div class="d-inline-flex gap-1">
+                    <button class="btn btn-sm btn-light border" title="View Profile"><i
+                        class="bi bi-eye text-primary"></i></button>
+                    <button class="btn btn-sm btn-light border" title="Edit Student"><i
+                        class="bi bi-pencil text-secondary"></i></button>
+                    <button class="btn btn-sm btn-light border" title="Delete"><i
+                        class="bi bi-trash text-danger"></i></button>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+  </section>
+
+  <!-- Student Feedback Carousel Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4 position-relative">
+
+      <!-- Header -->
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-2">Student Voices</h6>
+        <h2 class="display-6 fw-bold mb-0">What Our Students Say</h2>
+      </div>
+
+      <!-- Bootstrap Carousel -->
+      <div id="studentFeedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators custom-indicators mb-n4">
+          <button type="button" data-bs-target="#studentFeedbackCarousel" data-bs-slide-to="0" class="active bg-primary"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#studentFeedbackCarousel" data-bs-slide-to="1" class="bg-primary"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#studentFeedbackCarousel" data-bs-slide-to="2" class="bg-primary"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Inner Content -->
+        <div class="carousel-inner pb-5">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mx-2">
+                  <!-- Stars -->
+                  <div class="text-warning mb-4">
+                    <i class="bi bi-star-fill fs-4"></i><i class="bi bi-star-fill fs-4"></i><i
+                      class="bi bi-star-fill fs-4"></i><i class="bi bi-star-fill fs-4"></i><i
+                      class="bi bi-star-fill fs-4"></i>
+                  </div>
+                  <!-- Quote -->
+                  <h4 class="fw-bold mb-4">"The best decision I've ever made for my career."</h4>
+                  <p class="lead text-muted mb-5 fst-italic">"The hands-on curriculum and incredibly supportive faculty
+                    gave me the skills and confidence I needed to transition into tech. Within a month of graduating, I
+                    landed my dream job."</p>
+                  <!-- User Info -->
+                  <div class="d-flex align-items-center justify-content-center gap-3">
+                    <img src="./assets/img/tylijura-ai-generated-9419886_640.jpg" alt="Maria Gonzalez"
+                      class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                      style="width: 70px; height: 70px;">
+                    <div class="text-start">
+                      <h6 class="fw-bold mb-0">Maria Gonzalez</h6>
+                      <span class="small text-muted">Class of 2023, Software Engineering</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mx-2">
+                  <div class="text-warning mb-4">
+                    <i class="bi bi-star-fill fs-4"></i><i class="bi bi-star-fill fs-4"></i><i
+                      class="bi bi-star-fill fs-4"></i><i class="bi bi-star-fill fs-4"></i><i
+                      class="bi bi-star-half fs-4"></i>
+                  </div>
+                  <h4 class="fw-bold mb-4">"A truly transformative experience."</h4>
+                  <p class="lead text-muted mb-5 fst-italic">"I came here expecting to just get a degree, but I left
+                    with
+                    a newfound passion for learning, lifelong friends, and a global network of mentors. The campus life
+                    is
+                    unbeatable."</p>
+                  <div class="d-flex align-items-center justify-content-center gap-3">
+                    <img src="./assets/img/tylijura-ai-generated-9043369_640.png" alt="David Kim"
+                      class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                      style="width: 70px; height: 70px;">
+                    <div class="text-start">
+                      <h6 class="fw-bold mb-0">David Kim</h6>
+                      <span class="small text-muted">Class of 2022, Business Administration</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 text-center">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 mx-2">
+                  <div class="text-warning mb-4">
+                    <i class="bi bi-star-fill fs-4"></i><i class="bi bi-star-fill fs-4"></i><i
+                      class="bi bi-star-fill fs-4"></i><i class="bi bi-star-fill fs-4"></i><i
+                      class="bi bi-star-fill fs-4"></i>
+                  </div>
+                  <h4 class="fw-bold mb-4">"World-class facilities and support."</h4>
+                  <p class="lead text-muted mb-5 fst-italic">"The resources available to students here are incredible.
+                    From the 24/7 library access to the dedicated career counseling center, I felt supported every step
+                    of
+                    the way."</p>
+                  <div class="d-flex align-items-center justify-content-center gap-3">
+                    <img src="./assets/img/alexandra_koch-ai-generated-7976796_1280.jpg" alt="Emily Chen"
+                      class="rounded-circle object-fit-cover shadow-sm border border-2 border-white"
+                      style="width: 70px; height: 70px;">
+                    <div class="text-start">
+                      <h6 class="fw-bold mb-0">Emily Chen</h6>
+                      <span class="small text-muted">Class of 2024, Architecture</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls (Hidden on small screens for cleaner look) -->
+        <button class="carousel-control-prev d-none d-lg-flex ms-md-4" type="button"
+          data-bs-target="#studentFeedbackCarousel" data-bs-slide="prev" style="width: auto;">
+          <span class="btn btn-primary rounded-circle shadow d-flex justify-content-center align-items-center"
+            style="width: 45px; height: 45px;" aria-hidden="true">
+            <i class="bi bi-chevron-left fs-5"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none d-lg-flex me-md-4" type="button"
+          data-bs-target="#studentFeedbackCarousel" data-bs-slide="next" style="width: auto;">
+          <span class="btn btn-primary rounded-circle shadow d-flex justify-content-center align-items-center"
+            style="width: 45px; height: 45px;" aria-hidden="true">
+            <i class="bi bi-chevron-right fs-5"></i>
+          </span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Big Custom Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Column 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-white mb-3"><img src="./assets/img/download.png" alt="" class="w-25"></h5>
+          <p class="text-secondary small mb-4">We provide high-quality digital solutions to help businesses grow and
+            scale
+            effectively. Innovate with us and reach new heights.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Home</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">About</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Teacher</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Student</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Result</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Academic</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Login Page</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+            <li class="d-flex gap-3 align-items-start">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>123 Innovation Ave, Tech City,<br>New York 10001</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>support@brandlogo.com</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+          <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address"
+              required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
+        </div>
+
+      </div>
+
+      <!-- Simple Footer Copyright -->
+      <hr class="border-secondary mt-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; 2026 BrandLogo. All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer section here -->
+  <footer id="footer_section" class="py-3 bg-dark">
+    <div class="container-fluid">
+      <div class="soket">
+        <p class="mb-0">Copyright © 2026 All rights reserved.</p>
+        <small>
+          <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a>
+          |
+          <a href="#" class="text-white text-decoration-none mx-2"> Terms of Service</a>
+        </small>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- bootstrap js link here -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
