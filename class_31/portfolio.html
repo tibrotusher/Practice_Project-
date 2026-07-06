@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!-- google font link here -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- favicon link here -->
+  <link rel="short icon" href="./assets/img/osydenic-logo-2067396_640.png" type="image/x-icon">
+
+  <!-- bootstrap icon link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- bootstrap link here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- custom css link here -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Custom Navigation Bar -->
+  <header id="navbar" class="sticky-md-top">
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm py-3">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold text-primary fs-4" href="#"><img src="./assets/img/images.jpg" alt="logo"
+            class="w-25">
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-lg-3">
+            <li class="nav-item"><a class="nav-link fs-5 " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link fs-5" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 active text-primary" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="service.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- breadcrumbs section here -->
+  <section id="breadcrumb_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="breadcrubs-caption text-center">
+          <h1 class="text-uppercase text-light fs-3 fw-bold">Portfolio Page</h1>
+          <div class="breadcrumbs-caption-btn pt-3">
+            <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+                class="bi bi-house-door-fill"></i>home</a>
+            <span class=" mx-2 text-success">/</span>
+            <a href="" class="text-uppercase text-decoration-none fw-bold text-black">Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Intro Section -->
+  <section class="py-5 overflow-hidden">
+    <div class="container py-4 py-md-5">
+      <div class="row g-5 align-items-center">
+
+        <!-- Text Content -->
+        <div class="col-lg-5 order-2 order-lg-1">
+          <div
+            class="d-inline-block px-3 py-1 bg-primary bg-opacity-10 text-primary rounded-pill fw-bold small tracking-wide mb-3">
+            AVAILABLE FOR HIRE
+          </div>
+          <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-primary">Tibro Tusher</span>.</h1>
+          <h3 class="fw-medium text-muted mb-4 h4">Senior Full-Stack Developer</h3>
+          <p class="lead text-muted mb-4 fs-6 lh-lg">I build pixel-perfect, engaging, and accessible digital
+            experiences.
+            With over 8 years of expertise in creating scalable web applications, I help businesses turn complex
+            problems
+            into elegant solutions.</p>
+
+          <!-- CTA Buttons -->
+          <div class="d-flex flex-wrap gap-3 mb-5">
+            <a href="#projects" class="btn btn-primary rounded-pill px-4 py-2 fw-bold shadow hover-lift">View
+              Projects</a>
+            <a href="#resume" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-bold hover-lift">Download Resume</a>
+          </div>
+
+          <!-- Stats -->
+          <div class="row g-4 pt-4 border-top">
+            <div class="col-4">
+              <h3 class="fw-bold mb-0">1<span class="text-primary">+</span></h3>
+              <p class="text-muted fw-bold text-uppercase mb-0 tracking-wide" style="font-size: 0.65rem;">Years Exp.</p>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold mb-0">50<span class="text-primary">+</span></h3>
+              <p class="text-muted fw-bold text-uppercase mb-0 tracking-wide" style="font-size: 0.65rem;">Projects</p>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold mb-0">100<span class="text-primary">+</span></h3>
+              <p class="text-muted fw-bold text-uppercase mb-0 tracking-wide" style="font-size: 0.65rem;">Clients</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image/Visual -->
+        <div class="col-lg-6 offset-lg-1 order-1 order-lg-2">
+          <div class="position-relative p-3 p-md-4">
+            <!-- Decorative Background Blob -->
+            <div class="position-absolute top-50 start-50 translate-middle bg-primary rounded-circle opacity-25 z-0"
+              style="width: 110%; height: 110%; filter: blur(50px);"></div>
+
+            <!-- Profile Image Container -->
+            <div
+              class="position-relative z-1 rounded-4 overflow-hidden border border-4 border-white shadow-lg profile-img-wrapper">
+              <img src="./assets/img/IMG-20250211-WA0010-removebg-preview.png" alt="Alex Chen"
+                class="img-fluid w-100 object-fit-cover" style="aspect-ratio: 4/5;">
+            </div>
+
+            <!-- Floating Badge (Hidden on very small screens) -->
+            <div
+              class="position-absolute top-0 end-0 mt-5 me-n2 z-2 bg-white rounded-circle shadow p-3 hover-lift d-none d-md-block">
+              <i class="bi bi-code-slash fs-2 text-primary"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Vertical Timeline Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+      <h6 class="text-primary fw-bold text-uppercase text-center mb-2 tracking-wide">History</h6>
+      <h2 class="display-6 fw-bold text-center mb-5">Educational Journey</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="position-relative pb-4">
+
+            <!-- Main Vertical Line -->
+            <div class="position-absolute top-0 bottom-0 start-0 ms-3 ms-md-5 bg-primary opacity-25"
+              style="width: 2px;">
+            </div>
+
+            <!-- Timeline Item 1 -->
+            <div class="position-relative mb-5 pe-3 ps-5 ps-md-0 d-flex align-items-start">
+              <!-- Icon/Dot -->
+              <div class="d-flex flex-column align-items-center position-absolute start-0 ms-1 ms-md-4 mt-1"
+                style="transform: translateX(-50%);">
+                <div
+                  class="bg-primary rounded-circle shadow d-flex align-items-center justify-content-center text-white"
+                  style="width: 40px; height: 40px; z-index: 2;">
+                  <i class="bi bi-mortarboard-fill fs-5"></i>
+                </div>
+              </div>
+              <!-- Content Card -->
+              <div class="ms-md-5 ps-md-5 w-100">
+                <div class="card border-0 shadow-sm rounded-4 timeline-card hover-lift">
+                  <div class="card-body p-4 p-md-5">
+                    <span
+                      class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3 tracking-wide">2023
+                    </span>
+                    <h4 class="fw-bold mb-3">Wordpress development</h4>
+                    <p class="text-muted mb-0 lh-lg">Launched three new international campuses in Europe and Asia,
+                      expanding our reach to over 50,000 students worldwide with state-of-the-art virtual learning
+                      environments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="position-relative mb-5 pe-3 ps-5 ps-md-0 d-flex align-items-start">
+              <div class="d-flex flex-column align-items-center position-absolute start-0 ms-1 ms-md-4 mt-1"
+                style="transform: translateX(-50%);">
+                <div
+                  class="bg-primary rounded-circle shadow d-flex align-items-center justify-content-center text-white"
+                  style="width: 40px; height: 40px; z-index: 2;">
+                  <i class="bi bi-book-fill fs-5"></i>
+                </div>
+              </div>
+              <div class="ms-md-5 ps-md-5 w-100">
+                <div class="card border-0 shadow-sm rounded-4 timeline-card hover-lift">
+                  <div class="card-body p-4 p-md-5">
+                    <span
+                      class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3 tracking-wide">
+                      2022</span>
+                    <h4 class="fw-bold mb-3">Digital Curriculum Integration</h4>
+                    <p class="text-muted mb-0 lh-lg">Completely revamped the curriculum to include advanced AI and
+                      machine
+                      learning courses, partnering with top tech companies for hands-on student projects.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="position-relative mb-0 pe-3 ps-5 ps-md-0 d-flex align-items-start">
+              <div class="d-flex flex-column align-items-center position-absolute start-0 ms-1 ms-md-4 mt-1"
+                style="transform: translateX(-50%);">
+                <div
+                  class="bg-primary rounded-circle shadow d-flex align-items-center justify-content-center text-white"
+                  style="width: 40px; height: 40px; z-index: 2;">
+                  <i class="bi bi-building-fill fs-5"></i>
+                </div>
+              </div>
+              <div class="ms-md-5 ps-md-5 w-100">
+                <div class="card border-0 shadow-sm rounded-4 timeline-card hover-lift">
+                  <div class="card-body p-4 p-md-5">
+                    <span
+                      class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold mb-3 tracking-wide">
+                      2020-2023</span>
+                    <h4 class="fw-bold mb-3">Foundation & Web development</h4>
+                    <p class="text-muted mb-0 lh-lg">Founded with a vision to provide accessible, high-quality
+                      education.
+                      Started with just 100 students in a small building, growing into a recognized institution of
+                      excellence.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-4">
+
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-2">My Toolbox</h6>
+        <h2 class="display-6 fw-bold mb-0">Technologies & Skills</h2>
+      </div>
+
+      <div class="row g-4 text-start">
+
+        <!-- Category 1: Frontend -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift">
+            <div class="card-body p-4 p-md-5">
+              <!-- Icon & Title -->
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div
+                  class="bg-primary bg-opacity-10 text-primary rounded-circle p-3 d-flex align-items-center justify-content-center"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-window-sidebar fs-4"></i>
+                </div>
+                <h4 class="fw-bold mb-0">Frontend</h4>
+              </div>
+              <!-- Tags -->
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">React.js</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Vue.js</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">TypeScript</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Tailwind CSS</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Bootstrap</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Next.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Backend -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift">
+            <div class="card-body p-4 p-md-5">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div
+                  class="bg-success bg-opacity-10 text-success rounded-circle p-3 d-flex align-items-center justify-content-center"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-server fs-4"></i>
+                </div>
+                <h4 class="fw-bold mb-0">Backend</h4>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Node.js</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Python / Django</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">PostgreSQL</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">MongoDB</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">GraphQL</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">REST APIs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Tools & Deploy -->
+        <div class="col-md-6 col-lg-4 offset-md-3 offset-lg-0">
+          <div class="card border-0 shadow-sm rounded-4 h-100 hover-lift">
+            <div class="card-body p-4 p-md-5">
+              <div class="d-flex align-items-center gap-3 mb-4">
+                <div
+                  class="bg-danger bg-opacity-10 text-danger rounded-circle p-3 d-flex align-items-center justify-content-center"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-tools fs-4"></i>
+                </div>
+                <h4 class="fw-bold mb-0">Tools & Deploy</h4>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Git & GitHub</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Docker</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">AWS</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Vercel</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">Figma</span>
+                <span class="badge bg-light text-dark border px-3 py-2 fw-medium skill-tag">CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline -->
+  <section class="py-5 bg-white">
+    <div class="container py-4" style="max-width: 900px;">
+
+      <!-- Header -->
+      <div class="mb-5 text-center text-md-start">
+        <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-2">My Journey</h6>
+        <h2 class="display-6 fw-bold mb-0">Work Experience</h2>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="position-relative ms-3 ms-md-4">
+
+        <!-- Continuous Vertical Line -->
+        <div class="position-absolute top-0 bottom-0 border-start border-2 border-primary opacity-25"
+          style="left: 0; transform: translateX(-1px); z-index: 0; margin-left: 11px;"></div>
+
+        <!-- Job Item 1 (Current) -->
+        <div class="position-relative mb-5 ps-4 ps-md-5 hover-timeline-item">
+          <!-- Timeline Dot (Filled) -->
+          <div
+            class="position-absolute top-0 start-0 translate-middle-x bg-primary border border-4 border-white rounded-circle z-1 timeline-dot"
+            style="width: 24px; height: 24px; left: 11px !important;"></div>
+
+          <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 timeline-card">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-3 gap-2">
+              <h4 class="fw-bold mb-0">Senior Software Engineer</h4>
+              <span
+                class="badge bg-primary text-white px-3 py-2 fw-medium rounded-pill align-self-start align-self-lg-center">2021
+                - Present</span>
+            </div>
+            <h6 class="text-primary fw-bold mb-4"><i class="bi bi-building me-2"></i>TechNova Solutions · San Francisco,
+              CA</h6>
+            <ul class="text-muted lh-lg mb-0 ps-3">
+              <li class="mb-2">Led the front-end transition from Vue 2 to Vue 3, improving overall application
+                performance
+                by 35%.</li>
+              <li class="mb-2">Mentored a team of 4 junior developers, establishing code review guidelines and best
+                practices.</li>
+              <li>Architected a scalable micro-frontend solution for the company's flagship enterprise dashboard.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job Item 2 -->
+        <div class="position-relative mb-5 ps-4 ps-md-5 hover-timeline-item">
+          <!-- Timeline Dot (Outline) -->
+          <div
+            class="position-absolute top-0 start-0 translate-middle-x bg-white border border-4 border-primary rounded-circle z-1 timeline-dot"
+            style="width: 24px; height: 24px; left: 11px !important;"></div>
+
+          <div class="card border border-light shadow-none rounded-4 p-4 p-md-5 timeline-card bg-light bg-opacity-50">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-3 gap-2">
+              <h4 class="fw-bold mb-0">Full-Stack Developer</h4>
+              <span
+                class="badge bg-white border text-dark px-3 py-2 fw-medium rounded-pill align-self-start align-self-lg-center">2018
+                - 2021</span>
+            </div>
+            <h6 class="text-primary fw-bold mb-4"><i class="bi bi-building me-2"></i>Creative Digital Agency · New York,
+              NY</h6>
+            <ul class="text-muted lh-lg mb-0 ps-3">
+              <li class="mb-2">Developed and maintained multiple e-commerce platforms using React and Node.js,
+                processing
+                + annually.</li>
+              <li>Integrated third-party payment gateways (Stripe, PayPal) and built custom inventory management
+                systems.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job Item 3 -->
+        <div class="position-relative ps-4 ps-md-5 hover-timeline-item">
+          <!-- Timeline Dot (Outline) -->
+          <div
+            class="position-absolute top-0 start-0 translate-middle-x bg-white border border-4 border-primary rounded-circle z-1 timeline-dot"
+            style="width: 24px; height: 24px; left: 11px !important;"></div>
+
+          <div class="card border border-light shadow-none rounded-4 p-4 p-md-5 timeline-card bg-light bg-opacity-50">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-3 gap-2">
+              <h4 class="fw-bold mb-0">Junior Web Developer</h4>
+              <span
+                class="badge bg-white border text-dark px-3 py-2 fw-medium rounded-pill align-self-start align-self-lg-center">2016
+                - 2018</span>
+            </div>
+            <h6 class="text-primary fw-bold mb-4"><i class="bi bi-building me-2"></i>Startup Incubator · Boston, MA</h6>
+            <ul class="text-muted lh-lg mb-0 ps-3">
+              <li class="mb-2">Built responsive landing pages and marketing websites using HTML, CSS, JavaScript, and
+                Bootstrap.</li>
+              <li>Assisted in database design and wrote RESTful API endpoints for internal tools.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Custom Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Column 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-white mb-3">Portfolio</h5>
+          <p class="text-secondary small mb-4">We provide high-quality digital solutions to help businesses grow and
+            scale
+            effectively. Innovate with us and reach new heights.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">About Us</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Our Services</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Portfolio
+                Projects</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Contact Support</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+            <li class="d-flex gap-3 align-items-start">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>Shovagonj, Sundarganj,<br>Gaibandha 1000</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>example@gmail.com</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+01892...894</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+          <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address"
+              required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
+        </div>
+
+      </div>
+
+      <!-- Simple Footer Copyright -->
+      <hr class="border-secondary mt-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; 2026 Tibro, All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap js link here -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

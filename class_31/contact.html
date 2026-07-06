@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!-- google font link here -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- favicon link here -->
+  <link rel="short icon" href="./assets/img/osydenic-logo-2067396_640.png" type="image/x-icon">
+
+  <!-- bootstrap icon link here -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- bootstrap link here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- custom css link here -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <!-- Custom Navigation Bar -->
+  <header id="navbar" class="sticky-md-top">
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm py-3">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold text-primary fs-4" href="#"><img src="./assets/img/images.jpg" alt="logo"
+            class="w-25">
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium gap-lg-3">
+            <li class="nav-item"><a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link fs-5" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link fs-5" href="service.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link fs-5 active text-primary" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- breadcrumbs section here -->
+  <section id="breadcrumb_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="breadcrubs-caption text-center">
+          <h1 class="text-uppercase text-light fs-3 fw-bold">Contact Page</h1>
+          <div class="breadcrumbs-caption-btn pt-3">
+            <a href="" class="text-uppercase text-decoration-none text-light fw-bold"><i
+                class="bi bi-house-door-fill"></i>home</a>
+            <span class=" mx-2 text-success">/</span>
+            <a href="" class="text-uppercase text-decoration-none fw-bold text-black">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Split Form & Info Section -->
+  <section class="py-5">
+    <div class="container py-4">
+      <!-- Main Contact Card -->
+      <div class="row g-0 rounded-4 shadow-sm overflow-hidden border">
+
+        <!-- Left Info Panel -->
+        <div class="col-lg-4 bg-primary text-white p-5 d-flex flex-column justify-content-between">
+          <div>
+            <h3 class="fw-bold mb-2">Get in touch</h3>
+            <p class="opacity-75 mb-5">We'd love to hear from you. Our friendly team is always here to chat.</p>
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <i class="bi bi-geo-alt fs-3 text-light opacity-50"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Office Address</h6>
+                <p class="mb-0 opacity-75 small">123 Innovation Ave, NY 10001</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <i class="bi bi-envelope fs-3 text-light opacity-50"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Email Us</h6>
+                <p class="mb-0 opacity-75 small">hello@brandlogo.com</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-3">
+              <i class="bi bi-telephone fs-3 text-light opacity-50"></i>
+              <div>
+                <h6 class="mb-1 fw-bold">Call Us</h6>
+                <p class="mb-0 opacity-75 small">+1 (555) 123-4567</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Socials -->
+          <div class="mt-5">
+            <a href="#" class="text-white me-3 fs-5 opacity-75 hover-opacity-100 transition-all"><i
+                class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3 fs-5 opacity-75 hover-opacity-100 transition-all"><i
+                class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white fs-5 opacity-75 hover-opacity-100 transition-all"><i
+                class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Form Panel -->
+        <div class="col-lg-8 bg-white p-5">
+          <h3 class="fw-bold mb-4">Send us a message</h3>
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-medium text-muted">First Name</label>
+                <input type="text" class="form-control" placeholder="John" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-medium text-muted">Last Name</label>
+                <input type="text" class="form-control" placeholder="Doe" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-medium text-muted">Email Address</label>
+                <input type="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-medium text-muted">Message</label>
+                <textarea class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary px-5 fw-bold">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Full Width Map Embed -->
+      <div class="rounded-4 overflow-hidden shadow-sm mt-5 border bg-light" style="height: 400px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Custom Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Column 1: Brand & About -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-white mb-3">Portfolio</h5>
+          <p class="text-secondary small mb-4">We provide high-quality digital solutions to help businesses grow and
+            scale
+            effectively. Innovate with us and reach new heights.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">About Us</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Our Services</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Portfolio
+                Projects</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Contact Support</a>
+            </li>
+            <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+            <li class="d-flex gap-3 align-items-start">
+              <i class="bi bi-geo-alt fs-5 text-primary"></i>
+              <span>Shovagonj, Sundarganj,<br>Gaibandha 1000</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-envelope fs-5 text-primary"></i>
+              <span>example@gmail.com</span>
+            </li>
+            <li class="d-flex gap-3 align-items-center">
+              <i class="bi bi-telephone fs-5 text-primary"></i>
+              <span>+01892...894</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+          <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email address"
+              required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+          <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
+        </div>
+
+      </div>
+
+      <!-- Simple Footer Copyright -->
+      <hr class="border-secondary mt-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+          &copy; 2026 Tibro, All rights reserved.
+        </div>
+        <div class="col-md-6 text-center text-md-end small">
+          <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+          <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap js link here -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

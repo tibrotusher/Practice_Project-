@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#banner_section {
+  background: rgba(223, 230, 233, 1);
+}
+.text-break {
+  white-space: pre-line;
+}
+
+#breadcrumb_section {
+  background-image: url(../img/blue.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
